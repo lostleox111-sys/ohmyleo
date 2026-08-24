@@ -31,7 +31,7 @@ h1{font-family:Georgia,serif;font-size:clamp(28px,5vw,56px);line-height:1.05;let
 </head>
 <body>
 <audio id="bgMusic" loop style="display:none;">
-<source src="https://assets.mixkit.co/active_storage/sfx/2705/2705-preview.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" type="audio/mpeg">
 </audio>
 
 <header>
@@ -52,7 +52,7 @@ h1{font-family:Georgia,serif;font-size:clamp(28px,5vw,56px);line-height:1.05;let
 </div>
 </main>
 
-<div class="song-info" id="songInfo">🎵 Müzik çalıyor...</div>
+<div class="song-info" id="songInfo">🎵 Lofi Chill...</div>
 <div class="music-control" id="musicBtn" title="Müziği aç/kapat">🔊</div>
 
 <script>
@@ -70,7 +70,7 @@ musicBtn.addEventListener('click', function() {
   } else {
     bgMusic.play();
     musicBtn.textContent = '🔊';
-    songInfo.textContent = '🎵 Müzik çalıyor...';
+    songInfo.textContent = '🎵 Lofi Chill...';
     isPlaying = true;
   }
 });
