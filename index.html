@@ -6,25 +6,28 @@
 <title>OH MY LEO</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{min-height:100vh;color:#fff;font-family:Arial,sans-serif;background:#050505 url("assets/arka-plan.png") center/cover fixed no-repeat}
-body:before{content:"";position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:-1}
-header{height:90px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:#0006;border-bottom:1px solid #fff2;backdrop-filter:blur(8px)}
+body{height:100vh;width:100vw;overflow:hidden;color:#fff;font-family:Arial,sans-serif;background:#050505 url("assets/arka-plan.png") center/cover fixed no-repeat}
+body:before{content:"";position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:-1}
+html,body{overflow:hidden}
+header{height:90px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:#0006;border-bottom:1px solid #fff2;backdrop-filter:blur(8px);position:relative;z-index:10}
 .logo{font-size:24px;font-weight:bold;letter-spacing:2px}
 nav{display:flex;gap:30px}
 nav a{color:#fff;text-decoration:none;font-weight:bold;letter-spacing:1px}
-main{min-height:calc(100vh - 90px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 20px}
+main{height:calc(100vh - 90px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 20px;overflow:hidden}
 h1{font-family:Georgia,serif;font-size:clamp(44px,8vw,88px);line-height:1.05;letter-spacing:5px;text-shadow:0 5px 30px #000}
 .sub{margin-top:25px;letter-spacing:6px;opacity:.85}
 .cards{margin-top:55px;display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
-.card{width:210px;min-height:140px;padding:25px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-decoration:none;background:#000a;border:1px solid #fff3;border-radius:18px;backdrop-filter:blur(10px);transition:.25s}
+.card{width:210px;min-height:140px;padding:25px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-decoration:none;background:#000a;border:1px solid #fff3;border-radius:12px;transition:all .3s ease;cursor:pointer}
 .card:hover{transform:translateY(-7px);background:#222d;border-color:#fff7}
-.icon{font-size:36px;margin-bottom:14px}.card strong{font-size:15px;letter-spacing:2px}.card span{margin-top:8px;font-size:14px;color:#ccc}
-@media(max-width:700px){header{height:auto;padding:22px;flex-direction:column;gap:20px}nav{gap:25px;font-size:13px}h1{font-size:45px}.card{width:160px}}
+.icon{font-size:36px;margin-bottom:14px}
+.card strong{font-size:15px;letter-spacing:2px}
+.card span{margin-top:8px;font-size:14px;color:#ccc}
+@media(max-width:700px){header{height:auto;padding:22px;flex-direction:column;gap:20px}nav{gap:25px;font-size:13px}h1{font-size:45px}.card{width:160px}main{padding:40px 15px}}
 </style>
 </head>
 <body>
 <header>
-<div class="logo">🦁 OH MY LEO</div>
+<div class="logo">OH MY LEO</div>
 <nav>
 <a href="index.html">ANA SAYFA</a>
 <a href="hakkimda.html">HAKKIMDA</a>
@@ -36,7 +39,7 @@ h1{font-family:Georgia,serif;font-size:clamp(44px,8vw,88px);line-height:1.05;let
 <div class="cards">
 <a class="card" href="https://discord.com" target="_blank"><div class="icon">🎮</div><strong>DISCORD</strong><span>lostle0</span></a>
 <a class="card" href="https://www.tiktok.com/@19leonardo4" target="_blank"><div class="icon">♪</div><strong>TIKTOK</strong><span>19leonardo4</span></a>
-<a class="card" href="tel:+212786519126"><div class="icon">☎</div><strong>TELEFON</strong><span>+212 786 519 126</span></a>
+<a class="card" href="https://wa.me/212786519126" target="_blank"><div class="icon">💬</div><strong>WHATSAPP</strong><span>+212 786 519 126</span></a>
 </div>
 </main>
 </body>
