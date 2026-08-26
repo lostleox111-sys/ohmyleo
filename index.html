@@ -7,23 +7,23 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;width:100%;overflow:hidden}
-body{height:100vh;width:100vw;color:#fff;font-family:Arial,sans-serif;background:#050505 url("aba8b48057b9220eb404a136dfe5bb3b.jpg") center/cover fixed no-repeat;position:fixed;top:0;left:0}
+body{height:100vh;width:100vw;color:#fff;font-family:Arial,sans-serif;background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);position:fixed;top:0;left:0}
 body:before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.30);z-index:1}
 header{height:90px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:#0006;border-bottom:1px solid #fff2;backdrop-filter:blur(8px);position:relative;z-index:20}
 .logo{font-size:24px;font-weight:bold;letter-spacing:2px}
 nav{display:flex;gap:30px}
 nav a{color:#fff;text-decoration:none;font-weight:bold;letter-spacing:1px;transition:.3s}
 nav a:hover{opacity:.7}
-main{position:fixed;top:90px;left:0;right:0;bottom:0;height:calc(100vh - 90px);width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 20px}
+main{position:fixed;top:90px;left:0;right:0;bottom:0;height:calc(100vh - 90px);width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 20px;z-index:10;overflow-y:auto}
 h1{font-family:Georgia,serif;font-size:clamp(28px,5vw,56px);line-height:1.05;letter-spacing:5px;text-shadow:0 5px 30px #000;margin:0}
 .sub{margin-top:15px;letter-spacing:4px;opacity:.85;font-size:14px}
 .cards{margin-top:35px;display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
-.card{width:210px;min-height:140px;padding:25px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-decoration:none;background:#000a;border:1px solid #fff3;border-radius:8px;transition:.3s;cursor:pointer}
+.card{width:210px;min-height:140px;padding:25px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-decoration:none;background:#000a;border:1px solid #fff3;border-radius:12px;transition:.3s;cursor:pointer}
 .card:hover{transform:translateY(-7px);background:#222d;border-color:#fff7}
 .icon{font-size:36px;margin-bottom:14px}
 .card strong{font-size:15px;letter-spacing:2px}
 .card span{margin-top:8px;font-size:14px;color:#ccc}
-.music-control{position:fixed;bottom:30px;right:30px;z-index:30;background:#000a;border:1px solid #fff3;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;transition:.3s}
+.music-control{position:fixed;bottom:30px;right:30px;z-index:30;background:#000a;border:1px solid #fff3;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:28px;transition:.3s}
 .music-control:hover{background:#222d;transform:scale(1.1)}
 .song-info{position:fixed;bottom:30px;left:30px;z-index:30;background:#000a;border:1px solid #fff3;border-radius:8px;padding:12px 16px;font-size:12px;max-width:200px}
 @media(max-width:700px){header{height:auto;padding:22px;flex-direction:column;gap:20px}nav{gap:25px;font-size:13px}h1{font-size:32px}.card{width:160px}main{padding:30px 15px;top:auto}.music-control{bottom:20px;right:20px;width:50px;height:50px}.song-info{bottom:20px;left:20px;font-size:11px}}
@@ -37,8 +37,8 @@ h1{font-family:Georgia,serif;font-size:clamp(28px,5vw,56px);line-height:1.05;let
 <header>
 <div class="logo">OH MY LEO</div>
 <nav>
-<a href="index.html">ANA SAYFA</a>
-<a href="hakkimda.html">HAKKIMDA</a>
+<a href="/ohmyleo/">ANA SAYFA</a>
+<a href="/ohmyleo/hakkimda.html">HAKKIMDA</a>
 </nav>
 </header>
 <main>
@@ -47,8 +47,8 @@ h1{font-family:Georgia,serif;font-size:clamp(28px,5vw,56px);line-height:1.05;let
 <div class="cards">
 <a class="card" href="https://discord.com" target="_blank"><div class="icon">🎮</div><strong>DISCORD</strong><span>lostle0</span></a>
 <a class="card" href="https://www.tiktok.com/@19leonardo4" target="_blank"><div class="icon">♪</div><strong>TIKTOK</strong><span>19leonardo4</span></a>
-<a class="card" href="mailto:lostleox111@gmail.com" target="_blank"><div class="icon">✉️</div><strong>E-MAIL</strong><span>lostleox111</span></a>
-<a class="card" href="https://wa.me/212786519126" target="_blank"><div class="icon">💬</div><strong>WHATSAPP</strong><span>+212 786 519 126</span></a>
+<a class="card" href="https://www.instagram.com" target="_blank"><div class="icon">📸</div><strong>INSTAGRAM</strong><span>leonardo</span></a>
+<a class="card" href="https://www.youtube.com" target="_blank"><div class="icon">▶️</div><strong>YOUTUBE</strong><span>Leonardo</span></a>
 </div>
 </main>
 
